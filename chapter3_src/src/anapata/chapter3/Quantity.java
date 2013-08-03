@@ -10,7 +10,7 @@ public class Quantity {
 	}
 
 	public Quantity convertTo(Unit convert) {
-		return new Quantity(unit.get換算率(convert) * quantity, convert);
+		return new Quantity(unit.getConvertRatio(convert) * quantity, convert);
 	}
 
 	public boolean equals(Object compare) {

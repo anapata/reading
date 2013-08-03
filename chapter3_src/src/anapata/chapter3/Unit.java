@@ -13,8 +13,8 @@ public class Unit {
 		this.name = name;
 	}
 
-	public float get換算率(Unit convert) {
-		return ConvertRatio.get換算率(this, convert);
+	public float getConvertRatio(Unit convert) {
+		return ConvertRatio.getConvertRatio(this, convert);
 	}
 
 	public boolean equals(Object compare){

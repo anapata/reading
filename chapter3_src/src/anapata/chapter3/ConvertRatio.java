@@ -21,7 +21,7 @@ public class ConvertRatio {
 		this.to = to;
 		this.rate = rate;
 	}
-	public static float get換算率(Unit from, Unit to) {
+	public static float getConvertRatio(Unit from, Unit to) {
 		for (ConvertRatio rate : rates){
 			if(rate.from.equals(from)){
 				if(rate.to.equals(to))return rate.rate;

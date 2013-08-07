@@ -2,7 +2,17 @@ package anapata.chapter3;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * 現象型.
+ * 「身長」「体重」「血液型」「体重の変化」など、どのような観測なのかを表す.
+ * 現象型がどのような現象を取り得るのかの関連も保持する.
+ * 例、「血液型」という現象型の場合、「A」「B」「AB」「O」という現象のみ取り得る.
+ * 
+ * @see Phenomenon
+ * @see Observation
+ * @author shibamiya
+ *
+ */
 public class PhenomenonType {
 	
 	static Map<String,Phenomenon[]> knownPhenomenonList = new HashMap<String,Phenomenon[]>();

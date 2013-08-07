@@ -3,6 +3,12 @@ package anapata.chapter3;
 import java.util.List;
 import java.util.Vector;
 
+/**
+ * 人.
+ * 観測を保持する.
+ * @author shibamiya
+ *
+ */
 public class Human {
 	
 	List<Observation> observations = new Vector<Observation>();
@@ -14,7 +20,5 @@ public class Human {
 	public List<Observation> getObservations() {
 		return observations;
 	}
-	
-	
 
 }

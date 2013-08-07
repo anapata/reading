@@ -1,6 +1,6 @@
 package anapata.chapter3;
-/*
- * 単位
+/**
+ * 単位.
  */
 public class Unit {
 
@@ -15,7 +15,7 @@ public class Unit {
 		this.name = name;
 	}
 
-	/*
+	/**
 	 * 換算率の取得
 	 */
 	public float getConvertRatio(Unit convert) {

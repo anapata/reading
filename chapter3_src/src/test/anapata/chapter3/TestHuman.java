@@ -22,7 +22,7 @@ public class TestHuman {
 	}
 
 	@Test
-	public void test6Feet() {
+	public void 身長6FEETの測定を保持する() {
 		Human john = new Human();
 		Quantity feet6 = new Quantity(6, anapata.chapter3.Unit.FEET);
 		PhenomenonType pt = new PhenomenonType("身長");
@@ -33,7 +33,7 @@ public class TestHuman {
 		assertEquals("身長", meas.get(0).getPhenomenonType().getName());
 	}
 	@Test
-	public void testBloodGroup() {
+	public void 血液型Aのカテゴリ観測を保持する() {
 		Human john = new Human();
 		PhenomenonType pt = new PhenomenonType("血液型");
 		CategoryObservation groupA = new CategoryObservation(new Phenomenon("血液型A"), pt);
@@ -41,6 +41,18 @@ public class TestHuman {
 		List<Observation> meas = john.getObservations();
 		assertEquals("血液型A", ((CategoryObservation)meas.get(0)).getPhenomenon().getName());
 		assertEquals("血液型", meas.get(0).getPhenomenonType().getName());
+	}
+	
+	@Test
+	public void 血液型Cを設定された場合は例外を投げる(){
+		PhenomenonType pt = new PhenomenonType("血液型");
+		try{
+			CategoryObservation groupC = new CategoryObservation(new Phenomenon("血液型C"), pt);
+			fail();
+		}catch(RuntimeException e){
+			assertEquals("血液型には血液型Cは設定できません",e.getMessage());
+		}
+		
 	}
 
 }

@@ -1,5 +1,7 @@
 package anapata.chapter3;
-
+/*
+ * 単位
+ */
 public class Unit {
 
 	public static final Unit FEET = new Unit("FEET");
@@ -13,6 +15,9 @@ public class Unit {
 		this.name = name;
 	}
 
+	/*
+	 * 換算率の取得
+	 */
 	public float getConvertRatio(Unit convert) {
 		return ConvertRatio.getConvertRatio(this, convert);
 	}

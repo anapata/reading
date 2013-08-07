@@ -8,5 +8,10 @@ public class Phenomenon  {
 	public String getName(){
 		return name;
 	}
+	
+	@Override
+	public boolean equals(Object o){
+		return name.equals(((Phenomenon)o).getName());
+	}
 
 }
